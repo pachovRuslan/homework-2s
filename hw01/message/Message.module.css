@@ -1,0 +1,72 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравниваем всё сообщение по правому краю */
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse; /* Разворачиваем элементы: аватарка будет справа от текста */
+    align-items: flex-end; /* Аватарка прижимается к низу баббла */
+    gap: 12px; /* Отступ между текстом и аватаркой */
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text {
+    background: #0066CC; /* Насыщенный синий цвет баббла из макета */
+    color: #FFFFFF; /* Белый текст */
+    padding: 12px 16px;
+    border-radius: 8px 8px 0px 8px; /* Срезаем правый нижний угол для хвостика */
+    position: relative;
+    max-width: 500px; /* Ограничиваем ширину, чтобы текст красиво переносился */
+    box-shadow: 0px 5px 20px rgba(0, 102, 204, 0.15);
+}
+
+/* Хвостик баббла, смотрящий на аватарку */
+.text:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10px; /* Выносим хвостик вправо, к аватарке */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 0 10px;
+    border-color: transparent transparent transparent #0066CC; /* Цвет совпадает с фоном .text */
+}
+
+.name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    text-align: right; /* Имя выравниваем по правому краю внутри баббла */
+}
+
+.messageText {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap; /* Сброс для тега <pre>, чтобы текст переносился */
+    word-break: break-word;
+    margin: 0;
+    text-align: left; /* Сам текст сообщения оставляем читать слева направо */
+}
+
+.time {
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 4px;
+    padding-right: 60px; /* Сдвигаем время влево, чтобы оно аккуратно стояло под синим бабблом */
+    text-align: right;
+}
