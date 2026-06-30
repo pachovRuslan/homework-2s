@@ -1,0 +1,45 @@
+.sendForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px; /* Отступ между полем ввода и кнопкой */
+    width: 100%;
+    margin-top: auto; /* Прижимает форму к самому низу контейнера .hw */
+}
+
+.textarea {
+    flex-grow: 1; /* Поле ввода занимает всё оставшееся пространство */
+    background: #F3F6F9; /* Светлый фон из макета */
+    border: none;
+    border-radius: 30px; /* Сильное скругление, делающее поле овальным */
+    padding: 12px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    outline: none;
+    resize: none; /* Запрещаем пользователю вручную растягивать текстовое поле */
+    height: 20px; /* Фиксированная высота под одну строку, как на макете */
+}
+
+.textarea::placeholder {
+    color: #8C96A3; /* Цвет подсказки "Type a message" */
+}
+
+.button {
+    background: #0066CC; /* Фирменный синий цвет кнопки */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px; /* Овальная кнопка, как и инпут */
+    padding: 12px 40px; /* Большие горизонтальные отступы для вытянутой формы */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Плавные анимации при ховере и клике */
+}
+
+.button:hover {
+    background: #0052CC;}
+    
