@@ -47,6 +47,9 @@ importers:
       gh-pages:
         specifier: 4.0.0
         version: 4.0.0
+      hws2:
+        specifier: 'link:'
+        version: 'link:'
       react:
         specifier: 18.2.0
         version: 18.2.0

@@ -17,6 +17,7 @@
     "@types/uuid": "8.3.4",
     "axios": "0.27.2",
     "gh-pages": "4.0.0",
+    "hws2": "link:",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "8.0.4",
@@ -28,13 +29,13 @@
     "web-vitals": "2.1.4"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -r https://github.com/pachovRuslan/homework-2s.git -d build"
-},
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -r https://github.com/pachovRuslan/homework-2s.git -d build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
