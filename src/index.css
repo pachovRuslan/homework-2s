@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+/* 1. Добавляем переменные для каждой темы */
+:root[data-theme='1'] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+:root[data-theme='2'] {
+    /* Тот самый синий цвет фона со скриншота */
+    --bg-color: #e6f2ff; 
+    --text-color: #000000;
+}
+
+:root[data-theme='3'] {
+    --bg-color: #282c34;
+    --text-color: #ffffff;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -12,6 +29,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
+ 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+ 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 code {
